@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak Saya</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: linear-gradient(120deg, #e0e7ff 0%, #f7fafc 100%);
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        position: relative;
+        overflow-x: hidden;
+      }
+      .container {
+        max-width: 600px;
+        margin: 48px auto 32px auto;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 8px 32px rgba(37, 99, 235, 0.1);
+        padding: 40px 28px 32px 28px;
+        position: relative;
+        animation: fadeIn 1.2s ease;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .navbar {
+        text-align: center;
+        margin-bottom: 28px;
+        background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(37, 99, 235, 0.07);
+        padding: 12px 0;
+      }
+      .navbar a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        margin: 0 14px;
+        font-size: 16pt;
+        letter-spacing: 0.5px;
+        transition: color 0.2s, background 0.2s;
+        padding: 6px 12px;
+        border-radius: 6px;
+        position: relative;
+      }
+      .navbar a:hover {
+        color: #2563eb;
+        background: #fff;
+        text-decoration: none;
+      }
+      .navbar a.active {
+        background: #fff;
+        color: #2563eb;
+        box-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
+      }
+      hr {
+        border: none;
+        height: 4px;
+        background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+        margin: 32px 0 24px 0;
+        border-radius: 2px;
+        box-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
+      }
+      h2 {
+        color: #2563eb;
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 18px;
+        font-weight: 700;
+        text-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
+      }
+      .kontak-box {
+        background: #f1f5ff;
+        padding: 24px;
+        border-radius: 10px;
+        max-width: 400px;
+        margin: 0 auto;
+        box-shadow: 0 2px 8px rgba(37, 99, 235, 0.04);
+      }
+      ul {
+        margin-bottom: 18px;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      form label {
+        font-weight: 500;
+      }
+      form input,
+      form textarea {
+        width: 100%;
+        padding: 6px;
+        margin-top: 4px;
+        border-radius: 5px;
+        border: 1px solid #bcd;
+        font-size: 1em;
+      }
+      form button {
+        background: #2563eb;
+        color: #fff;
+        border: none;
+        padding: 8px 18px;
+        border-radius: 6px;
+        font-size: 1em;
+        cursor: pointer;
+        margin-top: 8px;
+        transition: background 0.2s;
+      }
+      form button:hover {
+        background: #1e40af;
+      }
+      p {
+        text-align: center;
+      }
+      .footer-text {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 1.1em;
+        color: #2563eb;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+        text-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
+      }
+      .wave {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+        width: 100%;
+        height: 80px;
+        background: url('data:image/svg+xml;utf8,<svg width="100%25" height="80" xmlns="http://www.w3.org/2000/svg"><path d="M0 40 Q 150 80 300 40 T 600 40 V80 H0 Z" fill="%2360a5fa" opacity="0.18"/></svg>');
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="profil.html">Profil</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="kontak.html" class="active">Kontak</a>
+      </div>
+      <hr />
+      <h2>Informasi Kontak</h2>
+      <div class="kontak-box">
+        <p>Silakan hubungi saya melalui:</p>
+        <ul>
+          <li>
+            Email:
+            <a href="mailto:apsarifaizah@gmail.com">apsarifaizah@gmail.com</a>
+          </li>
+          <li>
+            WhatsApp:
+            <a href="https://wa.me/6285708925075" target="_blank" rel="noopener"
+              >0857 - 0892 - 5075</a
+            >
+          </li>
+          <li>
+            Instagram:
+            <a
+              href="https://instagram.com/fzhssaliav_"
+              target="_blank"
+              rel="noopener"
+              >@fzhssaliav_</a
+            >
+          </li>
+        </ul>
+        <p>Atau isi formulir di bawah ini:</p>
+        <form>
+          <label>Nama:<br /><input type="text" name="nama" required /></label
+          ><br /><br />
+          <label>Email:<br /><input type="email" name="email" required /></label
+          ><br /><br />
+          <label
+            >Pesan:<br /><textarea
+              name="pesan"
+              rows="4"
+              required
+            ></textarea></label
+          ><br /><br />
+          <button type="submit">Kirim</button>
+        </form>
+        <div class="footer-text">
+          <b>Terima kasih sudah menghubungi saya!</b>
+        </div>
+      </div>
+      <div class="wave"></div>
+    </div>
+  </body>
+</html>

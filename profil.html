@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Saya</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: linear-gradient(120deg, #e0e7ff 0%, #f7fafc 100%);
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        position: relative;
+        overflow-x: hidden;
+      }
+      .container {
+        max-width: 600px;
+        margin: 48px auto 32px auto;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 8px 32px rgba(37, 99, 235, 0.1);
+        padding: 40px 28px 32px 28px;
+        position: relative;
+        animation: fadeIn 1.2s ease;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .navbar {
+        text-align: center;
+        margin-bottom: 28px;
+        background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(37, 99, 235, 0.07);
+        padding: 12px 0;
+      }
+      .navbar a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        margin: 0 14px;
+        font-size: 16pt;
+        letter-spacing: 0.5px;
+        transition: color 0.2s, background 0.2s;
+        padding: 6px 12px;
+        border-radius: 6px;
+        position: relative;
+      }
+      .navbar a:hover {
+        color: #2563eb;
+        background: #fff;
+        text-decoration: none;
+      }
+      .navbar a.active {
+        background: #fff;
+        color: #2563eb;
+        box-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
+      }
+      hr {
+        border: none;
+        height: 4px;
+        background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+        margin: 32px 0 24px 0;
+        border-radius: 2px;
+        box-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
+      }
+      h1 {
+        text-align: center;
+        color: #2563eb;
+        font-size: 2.3em;
+        margin-bottom: 18px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        text-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+      h1 .icon {
+        font-size: 1.1em;
+        vertical-align: middle;
+      }
+      p {
+        text-align: center;
+        font-size: 1.15em;
+        color: #444;
+        margin-bottom: 18px;
+        line-height: 1.7;
+      }
+      ul {
+        max-width: 400px;
+        margin: 18px auto;
+        background: #f1f5ff;
+        border-radius: 10px;
+        padding: 22px 28px;
+        box-shadow: 0 2px 8px rgba(37, 99, 235, 0.04);
+        font-size: 1.08em;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      .profile-icon {
+        font-size: 1.3em;
+        margin-right: 6px;
+      }
+      .footer-text {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 1.1em;
+        color: #2563eb;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+        text-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
+      }
+      .wave {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+        width: 100%;
+        height: 80px;
+        background: url('data:image/svg+xml;utf8,<svg width="100%25" height="80" xmlns="http://www.w3.org/2000/svg"><path d="M0 40 Q 150 80 300 40 T 600 40 V80 H0 Z" fill="%2360a5fa" opacity="0.18"/></svg>');
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="profil.html" class="active">Profil</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="kontak.html">Kontak</a>
+      </div>
+      <hr />
+      <h1><span class="icon profile-icon">👤</span> Halaman Profil Diri</h1>
+      <p>
+        Selamat datang di halaman profil saya.<br />Berikut data singkat tentang
+        saya:
+      </p>
+      <ul>
+        <li><b>Nama:</b> SABRINA LUNA A.F</li>
+        <li><b>NIM:</b> 231011401822</li>
+        <li><b>Jurusan:</b> Teknik Informatika</li>
+        <li><b>Hobi:</b> Mendengarkan Musik</li>
+        <li><b>Umur:</b> 20 Tahun</li>
+        <li><b>Kuliah:</b> Universitas Pamulang</li>
+        <li><b>Cita-cita:</b> Menjadi Web Developer</li>
+      </ul>
+      <div class="footer-text">
+        <b>Terima kasih sudah berkunjung ke halaman profil!</b>
+      </div>
+      <div class="wave"></div>
+    </div>
+  </body>
+</html>
